@@ -18,7 +18,7 @@ def checkingToml():
         fg = False
         print("Chekking Group: "+team)
         for user_a in ta["groups"][team]["users"]:
-            #print(team+" user: " + user_a)
+            print(team+" user: " + user_a)
             for user_b in tb["groups"][team]["users"]:
                 if user_a == user_b:
                     #print("found")
@@ -29,6 +29,21 @@ def checkingToml():
                 continue
             else:
                 print("not found: " + user_a)
+                return 1
+        
+        fg = False
+        for user_a2 in tb["groups"][team]["users"]:
+            #print(team+" user: " + user_a)
+            for user_b2 in ta["groups"][team]["users"]:
+                if user_a2 == user_b2:
+                    #print("found")
+                    fg = True
+                    break
+            if fg:
+                fg = False
+                continue
+            else:
+                print("not found: " + user_a2)
                 return 1
     return 0
 
