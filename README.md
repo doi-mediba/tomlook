@@ -11,7 +11,7 @@
 
 ```
 #クローンする
-git clone git@github.com:mediba-system/tomlook.git
+git clone git@github.com:doi-mediba/tomlook.git
 ```
 
 TOMLをパースするためのpythonライブラリが必要なので下記のようにコマンドを実行する。
