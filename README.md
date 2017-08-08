@@ -17,7 +17,7 @@ git clone git@github.com:mediba-system/tomlook.git
 TOMLをパースするためのpythonライブラリが必要なので下記のようにコマンドを実行する。
 
     # ライブラリのインストール
-    cd tomlook
+    % cd tomlook
     % pip install -r requirements.txt
     
     # 使用方法
